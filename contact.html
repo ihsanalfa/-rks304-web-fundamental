@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak — Ihsan Alfareno</title>
+  <meta name="description" content="Hubungi Ihsan Alfareno untuk konsultasi, kolaborasi proyek, atau pertanyaan umum.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-dark">
+
+  <header>
+    <div class="wrap nav">
+      <a href="index.html" class="logo">Ihsan Alfareno CSE'25</a>
+      <nav class="links" id="navLinks">
+        <a href="index.html">Beranda</a>
+        <a href="portfolio.html">Portofolio</a>
+        <a href="contact.html" class="active">Kontak</a>
+      </nav>
+      <a href="contact.html" class="nav-cta">Hubungi Saya</a>
+      <button class="burger" id="burgerBtn" aria-label="Buka menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-intro">
+      <div class="wrap">
+        <p class="hero-kicker mono">Kontak</p>
+        <h1>Mari berdiskusi soal proyek Anda.</h1>
+        <p>
+          Isi formulir berikut untuk konsultasi, kolaborasi proyek, atau
+          pertanyaan umum. Saya biasanya membalas dalam 1–2 hari kerja.
+        </p>
+      </div>
+    </section>
+
+    <section aria-labelledby="contact-heading">
+      <div class="wrap">
+        <div class="contact-layout">
+
+          <div class="contact-info">
+            <h2 id="contact-heading">Informasi kontak</h2>
+            <p>Pilih cara yang paling nyaman, atau langsung gunakan formulir di samping.</p>
+            <ul class="info-list">
+              <li>
+                <span class="i-label mono">Email</span>
+                4332501048.ihsan@student.polibatam.ac.id
+              </li>
+              <li>
+                <span class="i-label mono">Lokasi</span>
+                Batam, Kepulauan Riau
+              </li>
+              <li>
+                <span class="i-label mono">Waktu respons</span>
+                1–2 hari kerja
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <label for="fullname">Nama Lengkap</label>
+              <input type="text" id="fullname" name="fullname" required autocomplete="name">
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-row">
+                <label for="email">Alamat Email</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+              </div>
+              <div class="form-row">
+                <label for="phone">No. WhatsApp <span class="hint">(opsional)</span></label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="category">Kategori / Keperluan</label>
+              <select id="category" name="category" required>
+                <option value="" disabled selected>Pilih salah satu</option>
+                <option value="konsultasi">Konsultasi</option>
+                <option value="kolaborasi">Kolaborasi Proyek</option>
+                <option value="umum">Pertanyaan Umum</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Ceritakan kebutuhan atau pertanyaan Anda..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+
+            <p class="form-status success" id="formStatus" role="status"></p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <p>© 2026 Ihsan Alfareno. Tugas praktikum Web Fundamental — RKS3B.</p>
+      <div class="footer-links">
+        <a href="mailto:4332501048.ihsan@student.polibatam.ac.id">Email</a>
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
