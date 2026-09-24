@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NYAWIT - Products</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <style> body { font-family: 'Quicksand', sans-serif; } </style>
+  <script> tailwind.config = { theme: { extend: { colors: { cream: '#FDFBF7', nyawitGreen: '#2E8B57' } } } } </script>
+</head>
+<body class="bg-cream text-gray-800 flex flex-col min-h-screen">
+  <header class="bg-nyawitGreen text-white p-4 shadow-md flex justify-between items-center">
+    <h1 class="text-2xl font-bold">NYAWIT</h1>
+    <a href="index.html" class="bg-orange-400 hover:bg-red-600 px-4 py-2 rounded text-sm font-bold">Logout</a>
+  </header>
+  <div class="flex flex-1">
+    <nav class="w-64 bg-white shadow-lg p-4 flex flex-col gap-2 font-semibold border-r">
+      <a href="dashboard.html" class="p-2 hover:bg-yellow-600 hover:text-white rounded">Dashboard</a>
+      <a href="products.html" class="p-2 bg-nyawitGreen text-white rounded">Products</a>
+      <a href="#" class="p-2 hover:bg-yellow-600 hover:text-white rounded">Users</a>
+      <a href="#" class="p-2 hover:bg-yellow-600 hover:text-white rounded">Setting</a>
+    </nav>
+    <main class="flex-1 p-8">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-3xl font-bold text-nyawitGreen">Manajemen Produk</h2>
+        <a href="add-produk.html" class="bg-nyawitGreen text-white font-bold px-4 py-2 rounded shadow hover:bg-yellow-600 transition">+ Add Product</a>
+      </div>
+      <div class="bg-white shadow-md rounded-lg overflow-hidden border">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="bg-nyawitGreen text-white">
+              <th class="p-3 border-b">No</th>
+              <th class="p-3 border-b">Name</th>
+              <th class="p-3 border-b">Stock</th>
+              <th class="p-3 border-b">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="hover:bg-cream transition">
+              <td class="p-3 border-b">1</td>
+              <td class="p-3 border-b">Pohon Sawit LOW Quality</td>
+              <td class="p-3 border-b">150</td>
+              <td class="p-3 border-b font-bold">
+                <a href="edit-produk.html" class="text-blue-500 hover:text-blue-700 mr-3">Edit</a>
+                <a href="#" class="text-red-500 hover:text-red-700">Delete</a>
+              </td>
+            </tr>
+            <tr class="hover:bg-cream transition">
+              <td class="p-3 border-b">2</td>
+              <td class="p-3 border-b">Pohon Sawit MEDIUM Quality</td>
+              <td class="p-3 border-b">19 juta</td>
+              <td class="p-3 border-b font-bold">
+                <a href="edit-produk.html" class="text-blue-500 hover:text-blue-700 mr-3">Edit</a>
+                <a href="#" class="text-red-500 hover:text-red-700">Delete</a>
+              </td>
+            </tr>
+            <tr class="hover:bg-cream transition">
+              <td class="p-3 border-b">3</td>
+              <td class="p-3 border-b">Pohon Sawit HIGH Quality</td>
+              <td class="p-3 border-b">5 periode</td>
+              <td class="p-3 border-b font-bold">
+                <a href="edit-produk.html" class="text-blue-500 hover:text-blue-700 mr-3">Edit</a>
+                <a href="#" class="text-red-500 hover:text-red-700">Delete</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+  <footer class="bg-nyawitGreen text-white text-center p-3 mt-auto">
+    <p>&copy; 2026 NYAWIT - Ihsan Alfareno.</p>
+  </footer>
+</body>
+</html>
