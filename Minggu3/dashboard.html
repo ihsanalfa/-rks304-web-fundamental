@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NYAWIT - Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <style> body { font-family: 'Quicksand', sans-serif; } </style>
+  <script> tailwind.config = { theme: { extend: { colors: { cream: '#FDFBF7', nyawitGreen: '#2E8B57' } } } } </script>
+</head>
+<body class="bg-cream text-gray-800 flex flex-col min-h-screen">
+  <header class="bg-nyawitGreen text-white p-4 shadow-md flex justify-between items-center">
+    <h1 class="text-2xl font-bold">NYAWIT Admin</h1>
+    <a href="index.html" class="bg-orange-400 hover:bg-red-600 px-4 py-2 rounded text-sm font-bold">Logout</a>
+  </header>
+  <div class="flex flex-1">
+    <nav class="w-64 bg-white shadow-lg p-4 flex flex-col gap-2 font-semibold border-r">
+      <a href="dashboard.html" class="p-2 bg-nyawitGreen text-white rounded">Dashboard</a>
+      <a href="products.html" class="p-2 hover:bg-nyawitGreen hover:text-white rounded">Products</a>
+      <a href="#" class="p-2 hover:bg-nyawitGreen hover:text-white rounded">Users</a>
+      <a href="#" class="p-2 hover:bg-nyawitGreen hover:text-white rounded">Setting</a>
+    </nav>
+    <main class="flex-1 p-8">
+      <h2 class="text-3xl font-bold text-nyawitGreen mb-6">Dashboard E-Commerce</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="bg-white p-6 shadow-md rounded-lg border-b-4 border-nyawitGreen">
+          <h3 class="text-gray-500 text-sm font-bold uppercase">Total Pendapatan</h3>
+          <p class="text-3xl font-bold text-gray-800 mt-2">Rp 24.500.000</p>
+        </div>
+        <div class="bg-white p-6 shadow-md rounded-lg border-b-4 border-nyawitGreen">
+          <h3 class="text-gray-500 text-sm font-bold uppercase">Pesanan Baru</h3>
+          <p class="text-3xl font-bold text-gray-800 mt-2">128</p>
+        </div>
+        <div class="bg-white p-6 shadow-md rounded-lg border-b-4 border-nyawitGreen">
+          <h3 class="text-gray-500 text-sm font-bold uppercase">Total Produk</h3>
+          <p class="text-3xl font-bold text-gray-800 mt-2">450</p>
+        </div>
+        <div class="bg-white p-6 shadow-md rounded-lg border-b-4 border-nyawitGreen">
+          <h3 class="text-gray-500 text-sm font-bold uppercase">Pelanggan Aktif</h3>
+          <p class="text-3xl font-bold text-gray-800 mt-2">3,412</p>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="bg-nyawitGreen text-white text-center p-3 mt-auto">
+    <p>&copy; 2026 NYAWIT - Ihsan Alfareno.</p>
+  </footer>
+</body>
+</html>
